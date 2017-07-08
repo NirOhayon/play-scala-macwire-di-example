@@ -11,6 +11,7 @@ import router.Routes
 /**
  * Application loader that wires up the application dependencies using Macwire
  */
+
 class GreetingApplicationLoader extends ApplicationLoader {
   def load(context: Context): Application = new GreetingComponents(context).application
 }

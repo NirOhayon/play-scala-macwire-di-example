@@ -7,7 +7,7 @@ trait GreetingModule extends ServicesModule {
 
   import com.softwaremill.macwire._
 
-  lazy val greeterController = wire[GreeterController]
+  lazy val greeterController: GreeterController = wire[GreeterController]
 
   def langs: Langs
 
